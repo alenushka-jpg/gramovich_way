@@ -1,1 +1,20 @@
-// это комментарий
+.reviews__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: $basic-dark;
+}
+
+.reviews__text {
+  margin: 0;
+  color: rgba($basic-dark, 0.7);
+}
+
+.reviews__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-dark;
+}
+

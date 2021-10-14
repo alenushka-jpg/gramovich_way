@@ -1,1 +1,10 @@
-// это комментарий
+.button {
+  padding: 30px 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border: 0;
+  background-color: $basic-accent;
+  text-transform: uppercase;
+  color: $basic-white;
+}

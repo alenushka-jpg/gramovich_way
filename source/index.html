@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Way</title>
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="page-header">
-    <img class="page-header__logo logo" src="img/logo" alt="">
+  <header class="page-header container">
+    <img class="page-header__logo logo" width="57" height="22" src="img/logo.svg" alt="">
     <nav class="page-header__navigation main-navigation">
       <button class="page-header__burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -18,20 +19,22 @@
         <li class="main-navigation__item">Цены</li>
       </ul>
       <a class="main-navigation__phone" href="tel:749978468446" title="Номер для связи">
-        <img class="main-navigation__icon" src="img/logo" alt="">
+        <!-- <img class="main-navigation__icon" src="img/logo" alt=""> -->
         <span>+7 (499) -784-684-46</span>
       </a>
     </nav>
   </header>
   <main class="page-main">
     <section class="promo">
-      <h1 class="promo__title">Путешествие по Европе</h1>
-      <p class="promo__text">
-        В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
-      </p>
-      <a class="promo__button button" href="#countries">смотреть тур</a>
+      <div class="promo__content container">
+        <h1 class="promo__title">Путешествие по Европе</h1>
+        <p class="promo__text">
+          В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
+        </p>
+        <a class="promo__button button" href="#countries">смотреть тур</a>
+      </div>
     </section>
-    <section class="places">
+    <section class="places container">
       <h2 class="places__title">Места посещения</h2>
       <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="places__list">
@@ -57,7 +60,7 @@
         </li>
       </ul>
     </section>
-    <section class="countries">
+    <section class="countries container">
       <h2 class="visually-hidden">Отзывы</h2>
       <ul class="countries__list">
         <li class="countries__item">
@@ -191,7 +194,7 @@
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="price container">
       <h2 class="visually-hidden">Стоимость путешествия</h2>
       <div class="price__package">
         <div class="price__header">
@@ -224,7 +227,7 @@
       </div>
       <div class="price__description">
         <h3 class="price__title">Цены</h3>
-        <p class="price__text">Специально для Вас  мы разработали 2 пакета цен
+        <p class="price__package-text">Специально для Вас  мы разработали 2 пакета цен
           с разными условиями, отталкиваясь от Ваших потребностей и возможностей.
           Выберите для себя лучший вариант отпуска и отдохните на все 100%!
         </p>
@@ -234,7 +237,7 @@
         </div>
       </div>
     </section>
-    <section class="questions">
+    <section class="questions container">
       <h2 class="visually-hidden">Форма для вопросов</h2>
       <img class="questions__img" src="img/ocean.jpg" alt="">
       <div class="questions__form">
@@ -254,32 +257,26 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <section class="page-footer__next-travel next-travel">
       <h3 class="page-footer__title">Следующие путешествия</h3>
-      <div class="next-travel__lists">
-        <div class="ul next-travel__list">
-          <li class="next-travel__item">Марсель</li>
-          <li class="next-travel__item">Ним</li>
-          <li class="next-travel__item">Монпелье</li>
-          <li class="next-travel__item">Барселона</li>
-          <li class="next-travel__item">Пальма</li>
-        </div>
-        <div class="ul next-travel__list">
-          <li class="next-travel__item">Сардиния</li>
-          <li class="next-travel__item">Палермо</li>
-          <li class="next-travel__item">Катания</li>
-          <li class="next-travel__item">Неаполь</li>
-          <li class="next-travel__item">Рим</li>
-        </div>
-        <div class="ul next-travel__list">
-          <li class="next-travel__item">Корс</li>
-          <li class="next-travel__item">Ницца</li>
-          <li class="next-travel__item">Монако</li>
-          <li class="next-travel__item">Динь-ле-Бен</li>
-          <li class="next-travel__item">Гренобль</li>
-        </div>
-      </div>
+      <ul class="next-travel__list">
+        <li class="next-travel__item">Марсель</li>
+        <li class="next-travel__item">Ним</li>
+        <li class="next-travel__item">Монпелье</li>
+        <li class="next-travel__item">Барселона</li>
+        <li class="next-travel__item">Пальма</li>
+        <li class="next-travel__item">Сардиния</li>
+        <li class="next-travel__item">Палермо</li>
+        <li class="next-travel__item">Катания</li>
+        <li class="next-travel__item">Неаполь</li>
+        <li class="next-travel__item">Рим</li>
+        <li class="next-travel__item">Корс</li>
+        <li class="next-travel__item">Ницца</li>
+        <li class="next-travel__item">Монако</li>
+        <li class="next-travel__item">Динь-ле-Бен</li>
+        <li class="next-travel__item">Гренобль</li>
+      </ul>
     </section>
     <section class="page-footer__contacts contacts">
       <h3 class="page-footer__title">Наши контакты</h3>

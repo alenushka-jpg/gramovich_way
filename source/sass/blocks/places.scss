@@ -1,1 +1,28 @@
-// это комментарий
+.places__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.places__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $basic-dark;
+}
+
+.places__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba($basic-dark, 0.7);
+}
+
+.places__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $basic-dark;
+}

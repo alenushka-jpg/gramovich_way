@@ -1,1 +1,12 @@
-// это комментарий
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $basic-accent;
+}
