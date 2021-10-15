@@ -1,7 +1,17 @@
+.contacts {
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
 .contacts__list {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   list-style: none;
+}
+
+.contacts__item {
+  margin-bottom: 23px;
 }
 
 .contacts__link {
