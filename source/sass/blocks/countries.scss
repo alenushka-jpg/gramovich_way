@@ -1,7 +1,20 @@
+.countries {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 236px 118px;
+}
+
 .countries__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 99px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.countries__item {
+  padding: 25px 0 15px;
 }
 
 .countries__toggle {
@@ -15,15 +28,23 @@
 }
 
 .countries__information {
+  position: relative;
   display: none;
+  padding-top: 65px;
+  padding-bottom: 234px;
 
   &--current {
-    display: block;
+    display: flex;
   }
+}
+
+.countries__description {
+  margin-right: 100px;
 }
 
 .countries__title {
   margin: 0;
+  padding-bottom: 20px;
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
@@ -31,9 +52,22 @@
 }
 
 .countries__text {
+  width: 370px;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: rgba($basic-dark, 0.7);
+}
+
+.countries__button {
+  padding: 30px 44px;
+}
+
+.countries__reviews {
+  position: absolute;
+  right: 0;
+  width: 382px;
 }

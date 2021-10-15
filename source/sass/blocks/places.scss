@@ -51,7 +51,8 @@
 .places__name {
   position: absolute;
   bottom: 0;
-  left: 68px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 215px;
   padding: 17px 0;
