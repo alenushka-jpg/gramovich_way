@@ -9,6 +9,7 @@
   @media (max-width: $tablet-width) {
     min-height: 344px;
     background-image: url("../img/promo-tablet.jpg");
+    object-fit: cover;
   }
 }
 
@@ -17,6 +18,13 @@
   padding-top: 195px;
   margin-left: auto;
   margin-right: 59px;
+
+  @media (max-width: $tablet-width) {
+    width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+  }
 }
 
 .promo__title {
@@ -26,6 +34,13 @@
   font-size: 55px;
   line-height: 80px;
   color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 150%;
+  }
 }
 
 .promo__text {
@@ -34,7 +49,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
+  letter-spacing: -0.466667px;
   color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+  }
 }
 
 .promo__button {
@@ -43,4 +66,11 @@
   color: $basic-white;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 40px;
+  }
 }
