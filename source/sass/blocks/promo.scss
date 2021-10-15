@@ -5,6 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $promo-background;
+
+  @media (max-width: $tablet-width) {
+    min-height: 344px;
+    background-image: url("../img/promo-tablet.jpg");
+  }
 }
 
 .promo__content {

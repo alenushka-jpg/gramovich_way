@@ -3,6 +3,10 @@
   grid-template-columns: 387px 397px 397px;
   padding-top: 20px;
   padding-bottom: 80px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .page-footer__title {

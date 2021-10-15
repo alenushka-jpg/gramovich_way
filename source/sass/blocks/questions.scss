@@ -15,6 +15,11 @@
   background: $basic-white;
   box-shadow: 0 4px 30px rgba($basic-shadow, 0.1);
   border-radius: 5px;
+
+  @media (max-width: $tablet-width) {
+    right: 20%;
+    transform: translateX(0);
+  }
 }
 
 .questions__title {

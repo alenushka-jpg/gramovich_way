@@ -11,6 +11,10 @@
   margin-right: 65px;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-navigation__item {
@@ -29,4 +33,8 @@
   font-size: 18px;
   line-height: 32px;
   color: $basic-darkest;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
