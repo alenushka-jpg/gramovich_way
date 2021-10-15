@@ -7,7 +7,19 @@
 .countries__toggle {
   padding: 0;
   border: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba($basic-dark, 0.3);
   background-color: transparent;
+}
+
+.countries__information {
+  display: none;
+
+  &--current {
+    display: block;
+  }
 }
 
 .countries__title {
