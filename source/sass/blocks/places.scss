@@ -1,19 +1,47 @@
+.places {
+  padding-top: 200px;
+}
+
 .places__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.places__item {
+  position: relative;
+  margin-right: 60px;
+  margin-bottom: 100px;
+
+  &:nth-child(3),
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+
+  &:nth-child(4) {
+    margin-right: 120px;
+  }
+}
+
 .places__title {
+  width: 358px;
   margin: 0;
+  padding-bottom: 30px;
   font-weight: 600;
   font-size: 55px;
   line-height: 80px;
+  letter-spacing: -1.245px;
   color: $basic-dark;
 }
 
 .places__text {
+  width: 358px;
   margin: 0;
+  padding-top: 30px;
+  padding-bottom: 55px;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
@@ -21,6 +49,9 @@
 }
 
 .places__name {
+  position: absolute;
+  bottom: 0;
+  left: 68px;
   display: block;
   width: 215px;
   padding: 17px 0;
