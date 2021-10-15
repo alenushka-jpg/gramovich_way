@@ -1,5 +1,9 @@
 .places {
   padding-top: 200px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 80px;
+  }
 }
 
 .places__list {
@@ -24,6 +28,19 @@
   &:nth-child(4) {
     margin-right: 120px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 40px;
+
+    &:nth-child(3) {
+      margin-right: 40px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
 }
 
 .places__title {
@@ -35,6 +52,15 @@
   line-height: 80px;
   letter-spacing: -1.245px;
   color: $basic-dark;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+  }
 }
 
 .places__text {
@@ -45,7 +71,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  letter-spacing: -0.466667px;
   color: rgba($basic-dark, 0.7);
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 .places__name {
