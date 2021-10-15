@@ -1,4 +1,17 @@
+.user-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-data__contacts {
+  padding-bottom: 25px;
+}
+
 .user-data__input {
+  width: 269px;
+  padding: 16px;
+  border: 1px solid rgba($basic-dark, 0.3);
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;

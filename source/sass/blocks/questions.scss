@@ -1,4 +1,24 @@
+.questions {
+  position: relative;
+}
+
+.questions__form {
+  position: absolute;
+  top: 70px;
+  right: 30%;
+  transform: translateX(53%);
+  width: 656px;
+  height: 315px;
+  padding: 50px;
+  text-align: center;
+  background: $basic-white;
+  box-shadow: 0 4px 30px rgba($basic-shadow, 0.1);
+  border-radius: 5px;
+}
+
 .questions__title {
+  display: block;
+  padding-bottom: 15px;
   font-weight: 600;
   font-size: 25px;
   line-height: 32px;
@@ -7,8 +27,15 @@
 
 .questions__text {
   margin: 0;
+  padding-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: $basic-darkest;
 }
+
+.questions__button {
+  margin: 0 auto;
+  padding: 18px 42px;
+}
+
