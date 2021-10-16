@@ -79,50 +79,56 @@
       </ul>
     </section>
     <section class="countries">
-      <div class="container">
-        <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="countries__list">
-          <li class="countries__item">
-            <button class="countries__toggle">Греция</button>
-          </li>
-          <li class="countries__item">
-            <button class="countries__toggle">Албания</button>
-          </li>
-          <li class="countries__item">
-            <button class="countries__toggle">Македония</button>
-          </li>
-          <li class="countries__item">
-            <button class="countries__toggle">Черногория</button>
-          </li>
-          <li class="countries__item">
-            <button class="countries__toggle">Хорватия</button>
-          </li>
-        </ul>
-        <div class="countries__information countries__information--current">
-          <div class="countries__description">
-            <h3 class="countries__title">Греция</h3>
-            <p class="countries__text">
-              На севере Греции находится один из крупнейших комплексов монастырей,
-              расположенных на вершинах скал. Название его «Метеора» буквально переводится
-              как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
-              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
-              600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
-            </p>
-            <button class="countries__button button js-open-popup">купить тур сейчас</button>
-          </div>
-          <img class="countries__image" src="img/countries-greece.jpg" width="430" height="596" alt="">
-          <div class="countries__reviews reviews">
-            <h4 class="reviews__title">Отзывы</h4>
-            <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-              Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
-              Ощущение такое, как будто стоишь на краю света!
-            </p>
-            <div class="reviews__user">
-              <span class="reviews__name">Влада Голицина</span>
-            </div>
+      <h2 class="visually-hidden">Отзывы</h2>
+      <ul class="countries__list container">
+        <li class="countries__item">
+          <button class="countries__toggle">Греция</button>
+        </li>
+        <li class="countries__item">
+          <button class="countries__toggle">Албания</button>
+        </li>
+        <li class="countries__item">
+          <button class="countries__toggle">Македония</button>
+        </li>
+        <li class="countries__item">
+          <button class="countries__toggle">Черногория</button>
+        </li>
+        <li class="countries__item">
+          <button class="countries__toggle">Хорватия</button>
+        </li>
+      </ul>
+      <div class="countries__information countries__information--current container">
+        <div class="countries__description">
+          <h3 class="countries__title">Греция</h3>
+          <p class="countries__text">
+            На севере Греции находится один из крупнейших комплексов монастырей,
+            расположенных на вершинах скал. Название его «Метеора» буквально переводится
+            как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+            После покарения скал из песчанника и обломочной горной породы, достигающих в высоту
+            600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+          </p>
+          <button class="countries__button button js-open-popup">купить тур сейчас</button>
+        </div>
+        <picture>
+          <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-greece-tablet.webp 1x, ./img/countries-greece-tablet@2x.webp 2x">
+          <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-greece-mobile.webp 1x, ./img/countries-greece-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="./img/countries-greece.webp 1x, ./img/countries-greece@2x.webp 2x">
+          <source media="(max-width: 1023px)" srcset="./img/countries-greece.jpg 1x, ./img/countries-greece@2x.jpg 2x">
+          <source media="(max-width: 767px)" srcset="./img/countries-greece-mobile.jpg 1x, ./img/countries-greece-mobile@2x.jpg 2x">
+          <img class="countries__image" width="430" height="596" src="./img/countries-greece.jpg" srcset="./img/countries-greece@2x.jpg" alt="Греция">
+        </picture>
+        <div class="countries__reviews reviews">
+          <h4 class="reviews__title">Отзывы</h4>
+          <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+            Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+            Ощущение такое, как будто стоишь на краю света!
+          </p>
+          <div class="reviews__user">
+            <span class="reviews__name">Влада Голицина</span>
           </div>
         </div>
-        <div class="countries__information">
+      </div>
+      <div class="countries__information container">
           <div class="countries__description">
             <h3 class="countries__title">Албания</h3>
             <p class="countries__text">
@@ -133,7 +139,14 @@
             </p>
             <button class="countries__button button js-open-popup">купить тур сейчас</button>
           </div>
-          <img class="countries__image" src="img/countries-albania.jpg" width="430" height="596" alt="">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-albania-tablet.webp 1x, ./img/countries-albania-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-albania-mobile.webp 1x, ./img/countries-albania-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/countries-albania.webp 1x, ./img/countries-albania@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/countries-albania.jpg 1x, ./img/countries-albania@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/countries-albania-mobile.jpg 1x, ./img/countries-albania-mobile@2x.jpg 2x">
+            <img class="countries__image" width="430" height="596" src="./img/countries-albania.jpg" srcset="./img/countries-albania@2x.jpg" alt="Албания">
+          </picture>
           <div class="countries__reviews reviews">
             <h4 class="reviews__title">Отзывы</h4>
             <p class="reviews__text">Замечательный курорт, обязательно стоит посетить.
@@ -143,8 +156,8 @@
               <span class="reviews__name">Маришка</span>
             </div>
           </div>
-        </div>
-        <div class="countries__information">
+      </div>
+      <div class="countries__information container">
           <div class="countries__description">
             <h3 class="countries__title">Македония</h3>
             <p class="countries__text">
@@ -155,7 +168,14 @@
             </p>
             <button class="countries__button button js-open-popup">купить тур сейчас</button>
           </div>
-          <img class="countries__image" src="img/countries-macedonian.jpg" width="430" height="596" alt="">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-macedonian-tablet.webp 1x, ./img/countries-macedonian-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-macedonian-mobile.webp 1x, ./img/countries-macedonian-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/countries-macedonian.webp 1x, ./img/countries-macedonian@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/countries-macedonian.jpg 1x, ./img/countries-macedonian@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/countries-macedonian-mobile.jpg 1x, ./img/countries-macedonian-mobile@2x.jpg 2x">
+            <img class="countries__image" width="430" height="596" src="./img/countries-macedonian.jpg" srcset="./img/countries-macedonian@2x.jpg" alt="Македония">
+          </picture>
           <div class="countries__reviews reviews">
             <h4 class="reviews__title">Отзывы</h4>
             <p class="reviews__text">Я бы сказал необычное старое здание.
@@ -167,8 +187,8 @@
               <span class="reviews__name">Михаил Кузьмин</span>
             </div>
           </div>
-        </div>
-        <div class="countries__information">
+      </div>
+      <div class="countries__information container">
           <div class="countries__description">
             <h3 class="countries__title">Черногория</h3>
             <p class="countries__text">
@@ -178,7 +198,14 @@
             </p>
             <button class="countries__button button js-open-popup">купить тур сейчас</button>
           </div>
-          <img class="countries__image" src="img/countries-montenegro.jpg" width="430" height="596" alt="">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-montenegro-tablet.webp 1x, ./img/countries-montenegro-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-montenegro-mobile.webp 1x, ./img/countries-montenegro-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/countries-montenegro.webp 1x, ./img/countries-montenegro@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/countries-montenegro.jpg 1x, ./img/countries-montenegro@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/countries-montenegro-mobile.jpg 1x, ./img/countries-montenegro-mobile@2x.jpg 2x">
+            <img class="countries__image" width="430" height="596" src="./img/countries-montenegro.jpg" srcset="./img/countries-montenegro@2x.jpg" alt="Черногория">
+          </picture>
           <div class="countries__reviews reviews">
             <h4 class="reviews__title">Отзывы</h4>
             <p class="reviews__text">Неописуемой красоты каньон! Ничего прекраснее
@@ -188,8 +215,8 @@
               <span class="reviews__name">Анастасия Мей</span>
             </div>
           </div>
-        </div>
-        <div class="countries__information">
+      </div>
+      <div class="countries__information container">
           <div class="countries__description">
             <h3 class="countries__title">Хорватия</h3>
             <p class="countries__text">
@@ -200,7 +227,14 @@
             </p>
             <button class="countries__button button js-open-popup">купить тур сейчас</button>
           </div>
-          <img class="countries__image" src="img/countries-croatia.jpg" width="430" height="596" alt="">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-croatia-tablet.webp 1x, ./img/countries-croatia-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-croatia-mobile.webp 1x, ./img/countries-croatia-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/countries-croatia.webp 1x, ./img/countries-croatia@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/countries-croatia.jpg 1x, ./img/countries-croatia@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/countries-croatia-mobile.jpg 1x, ./img/countries-croatia-mobile@2x.jpg 2x">
+            <img class="countries__image" width="430" height="596" src="./img/countries-croatia.jpg" srcset="./img/countries-croatia@2x.jpg" alt="Хорватия">
+          </picture>
           <div class="countries__reviews reviews">
             <h4 class="reviews__title">Отзывы</h4>
             <p class="reviews__text">Мы поехали всей семьей, я, моя жена и родители.
@@ -211,8 +245,8 @@
               <span class="reviews__name">Владимир Мулицин</span>
             </div>
           </div>
-        </div>
-        <div class="countries__travel-price travel-price">
+      </div>
+      <div class="countries__travel-price travel-price container">
           <h2 class="visually-hidden">Стоимость путешествия</h2>
           <div class="travel-price__package">
             <div class="travel-price__header">
@@ -254,7 +288,6 @@
               <a class="contact-us__link" href="tel:tel:749978468446" title="Номер для связи">+7 (499) -784-684-46</a>
             </div>
           </div>
-        </div>
       </div>
     </section>
     <section class="questions container">

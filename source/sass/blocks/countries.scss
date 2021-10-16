@@ -2,18 +2,20 @@
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 50% 118px;
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .countries__list {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 99px;
-  margin: 0;
-  padding: 0;
   list-style: none;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
+    overflow: scroll;
   }
 }
 
@@ -43,11 +45,18 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
   }
 }
 
 .countries__description {
   margin-right: 100px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+    padding: 0 21px;
+  }
 }
 
 .countries__title {
@@ -57,6 +66,11 @@
   font-size: 55px;
   line-height: 90px;
   color: $basic-dark;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 150%;
+  }
 }
 
 .countries__text {
@@ -68,14 +82,40 @@
   font-size: 16px;
   line-height: 28px;
   color: rgba($basic-dark, 0.7);
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
 }
 
 .countries__button {
   padding: 30px 44px;
+
+  @media (max-width: $tablet-width) {
+    padding: 18px 44px;
+    margin-bottom: 30px;
+  }
+}
+
+.countries__image {
+  width: 430px;
+  height: 596px;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+    height: 415px;
+    margin: 0 auto;
+  }
 }
 
 .countries__reviews {
   position: absolute;
   right: 0;
   width: 382px;
+
+  @media (max-width: $tablet-width) {
+    position: static;
+  }
 }

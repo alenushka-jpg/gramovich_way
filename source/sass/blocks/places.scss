@@ -1,8 +1,30 @@
 .places {
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 200px;
 
   @media (max-width: $tablet-width) {
     padding-top: 80px;
+  }
+}
+
+.places__title {
+  width: 358px;
+  margin: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  color: $basic-dark;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
   }
 }
 
@@ -31,6 +53,7 @@
 
   @media (max-width: $tablet-width) {
     margin-right: 40px;
+    margin-bottom: 40px;
 
     &:nth-child(3) {
       margin-right: 40px;
@@ -43,23 +66,13 @@
   }
 }
 
-.places__title {
-  width: 358px;
-  margin: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 80px;
-  letter-spacing: -1.245px;
-  color: $basic-dark;
+.places__image {
+  width: 350px;
+  height: 430px;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-    line-height: 150%;
-    text-align: center;
+    width: 288px;
+    height: 425px;
   }
 }
 

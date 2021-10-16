@@ -5,7 +5,7 @@
   padding-bottom: 140px;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
