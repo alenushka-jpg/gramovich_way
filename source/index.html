@@ -263,16 +263,16 @@
       <div class="questions__form">
         <span class="questions__title">У Вас остались вопросы?</span>
         <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form class="questions__user-data user-data">
+        <form class="questions__user-data user-data" action="#">
           <label class="user-data__contacts">
             <input class="user-data__input user-data__input--tel" type="tel" placeholder="Введите 10 цифр номера">
             <span class="visually-hidden">Введите ваш номер телефона</span>
           </label>
           <label class="user-data__contacts">
-            <input class="user-data__input user-data__input--tel" type="e-mail" placeholder="E-mail">
+            <input class="user-data__input user-data__input--tel" type="email" placeholder="E-mail">
             <span class="visually-hidden">Введите ваш e-mail</span>
           </label>
-          <button class="questions__button button js-send-form" type="submit">Отправить</button>
+          <button class="user-data__button button js-send-form" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -321,5 +321,24 @@
       </p>
     </section>
   </footer>
+  <section class="modal-window" id="form-popup">
+    <div class="modal-window__form-popup">
+      <button class="modal-window__close close-popup" type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
+      <h3 class="modal-window__title">Купить тур</h3>
+      <form class="modal-window__form user-data" action="#" method="POST">
+        <label class="user-data__contacts">
+          <input class="user-data__input user-data__input--tel" type="tel" placeholder="Введите 10 цифр номера">
+          <span class="visually-hidden">Введите ваш номер телефона</span>
+        </label>
+        <label class="user-data__contacts">
+          <input class="user-data__input user-data__input--tel" type="email" placeholder="E-mail">
+          <span class="visually-hidden">Введите ваш e-mail</span>
+        </label>
+        <button class="user-data__button button js-send-form" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
