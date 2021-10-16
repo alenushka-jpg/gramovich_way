@@ -1,7 +1,7 @@
 .travel-price {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  // column-gap: 30px;
   padding-bottom: 140px;
 
   @media (max-width: $tablet-width) {
@@ -75,7 +75,7 @@
 
 .travel-price__description {
   padding-top: 116px;
-  padding-left: 60px;
+  // padding-left: 60px;
 }
 
 .travel-price__title {
