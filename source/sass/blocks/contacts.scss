@@ -1,7 +1,11 @@
-// .contacts {
-//   padding-left: 63px;
-//   padding-right: 63px;
-// }
+.contacts {
+  // padding-left: 63px;
+  // padding-right: 63px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 50px;
+  }
+}
 
 .contacts__list {
   margin: 0;
@@ -12,6 +16,10 @@
 
 .contacts__item {
   margin-bottom: 23px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .contacts__link {
