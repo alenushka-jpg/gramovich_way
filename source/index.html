@@ -109,22 +109,24 @@
           </p>
           <button class="countries__button button js-open-popup">купить тур сейчас</button>
         </div>
-        <picture>
-          <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-greece-tablet.webp 1x, ./img/countries-greece-tablet@2x.webp 2x">
-          <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-greece-mobile.webp 1x, ./img/countries-greece-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="./img/countries-greece.webp 1x, ./img/countries-greece@2x.webp 2x">
-          <source media="(max-width: 1023px)" srcset="./img/countries-greece.jpg 1x, ./img/countries-greece@2x.jpg 2x">
-          <source media="(max-width: 767px)" srcset="./img/countries-greece-mobile.jpg 1x, ./img/countries-greece-mobile@2x.jpg 2x">
-          <img class="countries__image" width="430" height="596" src="./img/countries-greece.jpg" srcset="./img/countries-greece@2x.jpg" alt="Греция">
-        </picture>
-        <div class="countries__reviews reviews">
-          <h4 class="reviews__title">Отзывы</h4>
-          <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
-            Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
-            Ощущение такое, как будто стоишь на краю света!
-          </p>
-          <div class="reviews__user">
-            <span class="reviews__name">Влада Голицина</span>
+        <div class="countries__aside">
+          <picture>
+            <source media="(max-width: 1023px)" type="image/webp" srcset="./img/countries-greece-tablet.webp 1x, ./img/countries-greece-tablet@2x.webp 2x">
+            <source media="(max-width: 767px)" type="image/webp" srcset="./img/countries-greece-mobile.webp 1x, ./img/countries-greece-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="./img/countries-greece.webp 1x, ./img/countries-greece@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="./img/countries-greece.jpg 1x, ./img/countries-greece@2x.jpg 2x">
+            <source media="(max-width: 767px)" srcset="./img/countries-greece-mobile.jpg 1x, ./img/countries-greece-mobile@2x.jpg 2x">
+            <img class="countries__image" width="430" height="596" src="./img/countries-greece.jpg" srcset="./img/countries-greece@2x.jpg" alt="Греция">
+          </picture>
+          <div class="countries__reviews reviews">
+            <h4 class="reviews__title">Отзывы</h4>
+            <p class="reviews__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+              Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах.
+              Ощущение такое, как будто стоишь на краю света!
+            </p>
+            <div class="reviews__user">
+              <span class="reviews__name">Влада Голицина</span>
+            </div>
           </div>
         </div>
       </div>
@@ -248,34 +250,36 @@
       </div>
       <div class="countries__travel-price travel-price container">
           <h2 class="visually-hidden">Стоимость путешествия</h2>
-          <div class="travel-price__package">
-            <div class="travel-price__header">
-              <h3 class="travel-price__subtitle">Комплексный</h3>
-              <div class="travel-price__price">$1999</div>
+          <div class="travel-price__cards">
+            <div class="travel-price__package">
+              <div class="travel-price__header">
+                <h3 class="travel-price__subtitle">Комплексный</h3>
+                <div class="travel-price__price">$1999</div>
+              </div>
+              <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="travel-price__list">
+                <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
+                <li class="travel-price__item">Перелет, трансфер и проживание в отелях</li>
+                <li class="travel-price__item">Завтраки, ужины в отелях и ланчи на природе</li>
+                <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
             </div>
-            <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul class="travel-price__list">
-              <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
-              <li class="travel-price__item">Перелет, трансфер и проживание в отелях</li>
-              <li class="travel-price__item">Завтраки, ужины в отелях и ланчи на природе</li>
-              <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
-          </div>
-          <div class="travel-price__package">
-            <div class="travel-price__header">
-              <h3 class="travel-price__subtitle">Экономный</h3>
-              <div class="travel-price__price">$1399</div>
+            <div class="travel-price__package">
+              <div class="travel-price__header">
+                <h3 class="travel-price__subtitle">Экономный</h3>
+                <div class="travel-price__price">$1399</div>
+              </div>
+              <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+              <ul class="travel-price__list">
+                <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
+                <li class="travel-price__item">Перелет и трансфер</li>
+                <li class="travel-price__item">Проживание в хостелах при отелях</li>
+                <li class="travel-price__item">Только завтраки в отелях</li>
+                <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
+              </ul>
+              <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
             </div>
-            <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-            <ul class="travel-price__list">
-              <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
-              <li class="travel-price__item">Перелет и трансфер</li>
-              <li class="travel-price__item">Проживание в хостелах при отелях</li>
-              <li class="travel-price__item">Только завтраки в отелях</li>
-              <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
-            </ul>
-            <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
           </div>
           <div class="travel-price__description">
             <h3 class="travel-price__title">Цены</h3>
