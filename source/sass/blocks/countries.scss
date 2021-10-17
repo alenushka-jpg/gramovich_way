@@ -1,5 +1,4 @@
 .countries {
-  display: none;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: 50% 118px;
@@ -74,7 +73,7 @@
 }
 
 .countries__text {
-  width: 370px;
+  width: 386px;
   margin: 0;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -104,6 +103,7 @@
 }
 
 .countries__image {
+  object-fit: cover;
   width: 430px;
   height: 596px;
 
@@ -118,7 +118,7 @@
   position: absolute;
   right: 0;
   top: 127px;
-  transform: translate(40%);
+  transform: translate(36%);
   width: 382px;
 
   @media (max-width: $tablet-width) {
@@ -126,5 +126,11 @@
     top: 90px;
     left: 50%;
     transform: translate(-50%);
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 50px;
+    width: 268px;
+    height: 431px;
   }
 }
