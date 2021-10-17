@@ -6,6 +6,11 @@
 
 .user-data__contacts {
   padding-bottom: 25px;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 20px;
+    width: 100%;
+  }
 }
 
 .user-data__contacts--popup {
@@ -27,6 +32,10 @@
   font-size: 14px;
   line-height: 17px;
   color: $basic-darkest;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .user-data__button {
