@@ -26,6 +26,10 @@
     line-height: 150%;
     text-align: center;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+  }
 }
 
 .places__list {
@@ -64,6 +68,15 @@
       margin-right: 0;
     }
   }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 0;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
 }
 
 .places__image {
@@ -93,6 +106,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
   }
 }
 

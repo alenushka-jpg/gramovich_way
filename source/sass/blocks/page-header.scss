@@ -18,4 +18,8 @@
     background-color: $basic-accent;
     border: 0;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 10px;
+  }
 }
