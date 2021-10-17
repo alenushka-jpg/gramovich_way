@@ -1,10 +1,37 @@
-.next-travel__list {
+.next-travel__countries {
   display: grid;
-  grid-template-columns: repeat(3, 115px);
-  column-gap: 10px;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 50px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+}
+
+.next-travel__list {
   margin: 0;
-  padding: 0 23px 0 0;
+  padding: 0;
   list-style: none;
+
+  &--third {
+    margin-right: 37px;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--first {
+      grid-column: 1/2;
+    }
+
+    &--second {
+      grid-column: 2/3;
+    }
+
+    &--third {
+      margin-right: 0;
+      grid-column: 1/-1;
+    }
+  }
 }
 
 .next-travel__item {
@@ -13,4 +40,8 @@
   font-size: 14px;
   line-height: 17px;
   color: rgba($basic-darkest, 0.5);
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }

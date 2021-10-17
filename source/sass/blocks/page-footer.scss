@@ -1,12 +1,10 @@
 .page-footer {
-  display: none;
-  // display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
   padding-top: 20px;
   padding-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-    // display: grid;
     grid-template-columns: 397px 331px;
     row-gap: 20px;
     justify-content: center;
@@ -35,7 +33,7 @@
 }
 
 .page-footer__corporate-travel {
-  grid-column: 1/3;
+  grid-column: 3/4;
 
   @media (max-width: $mobile-width) {
     grid-column: inherit;
@@ -49,4 +47,8 @@
   font-size: 18px;
   line-height: 32px;
   color: $basic-darkest;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+  }
 }
