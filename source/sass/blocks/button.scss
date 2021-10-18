@@ -10,6 +10,10 @@
   text-transform: uppercase;
   color: $basic-white;
 
+  &:hover {
+    background-color: $hover-accent;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 18px 40px;
     font-weight: 500;

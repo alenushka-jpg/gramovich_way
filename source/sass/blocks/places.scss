@@ -105,6 +105,39 @@
   }
 }
 
+.places__mask {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($basic-darkest, 0.6);
+  z-index: 5;
+
+  transform: scale(0);
+}
+
+.places__item:hover .places__mask {
+  display: flex;
+  transform: scale(1);
+}
+
+.places__link {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  padding: 30px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-white;
+  border: 1px solid rgba($basic-white, 0.7);
+}
+
 .places__image {
   width: 350px;
   height: 430px;
