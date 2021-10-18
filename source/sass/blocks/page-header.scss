@@ -1,11 +1,26 @@
 .page-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 0 0 21px;
+    display: block;
+    padding: 0;
+  }
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
   }
 }
 
@@ -19,7 +34,15 @@
     border: 0;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     padding: 10px 10px;
+  }
+}
+
+.page-header__navigation {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

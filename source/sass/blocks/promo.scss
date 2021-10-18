@@ -64,17 +64,15 @@
   margin-left: 115px;
 
   @media (max-width: $tablet-width) {
-    width: 398px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 440px;
+    margin: 0 auto;
     padding-top: 60px;
+    text-align: center;
   }
 
   @media (max-width: $mobile-width) {
     width: auto;
     padding-top: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 

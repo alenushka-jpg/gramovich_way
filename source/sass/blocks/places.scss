@@ -3,13 +3,6 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 80px;
-    padding-left: 76px;
-    padding-right: 76px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -38,7 +31,6 @@
 }
 
 .places__list {
-  margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
@@ -47,11 +39,14 @@
   row-gap: 100px;
 
   @media (max-width: $tablet-width) {
+    width: 616px;
+    margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 40px;
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 }

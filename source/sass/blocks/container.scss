@@ -1,8 +1,11 @@
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
 
   @media (max-width: $mobile-width) {
     padding-left: 16px;

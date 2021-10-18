@@ -5,24 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Way</title>
+  <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header container">
-    <img class="page-header__logo logo" width="57" height="22" src="img/logo.svg" alt="">
-    <nav class="page-header__navigation main-navigation">
+    <div class="page-header__top">
+      <img class="page-header__logo logo" width="57" height="22" src="./img/logo.svg" alt="">
       <button class="page-header__burger" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <img src="img/burger.svg" width="30" height="30" alt="">
+        <img src="./img/icon/burger.svg" width="30" height="30" alt="">
       </button>
+    </div>
+    <nav class="page-header__navigation main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__item">О путешествии</li>
-        <li class="main-navigation__item">Цены</li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#places">О путешествии</a>
+        </li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#price">Цены</a>
+        </li>
       </ul>
       <a class="main-navigation__phone" href="tel:749978468446" title="Номер для связи">
-        <!-- <img class="main-navigation__icon" src="img/logo" alt=""> -->
         <span>+7 (499) -784-684-46</span>
       </a>
+      <button class="main-navigation__close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+        <img class="main-navigation__close-icon" src="./img/icon/icon-close.svg" width="22" height="22">
+      </button>
     </nav>
   </header>
   <main class="page-main">
@@ -39,7 +52,7 @@
         </picture>
       </div>
       <div class="promo__container">
-        <div class="promo__content">
+        <div class="promo__content container">
           <h1 class="promo__title">Путешествие по Европе</h1>
           <p class="promo__text">
             В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
@@ -48,42 +61,42 @@
         </div>
       </div>
     </section>
-    <section class="places container">
+    <section class="places container" id="places">
       <h2 class="places__title">Места посещения</h2>
       <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
       <ul class="places__list">
         <li class="places__item places__item--greece">
           <picture>
-            <source media="(max-width:1023px)" srcset="img/greece-tablet.jpg">
-            <img class="places__image" width="350" height="430" src="img/greece.jpg" alt="Греция">
+            <source media="(max-width:1023px)" srcset="./img/greece-tablet.jpg">
+            <img class="places__image" width="350" height="430" src="./img/greece.jpg" alt="Греция">
           </picture>
           <span class="places__name">Греция</span>
         </li>
         <li class="places__item places__item--albania">
           <picture>
-            <source media="(max-width:1023px)" srcset="img/albania-tablet.jpg">
-            <img class="places__image" width="350" height="430" src="img/albania.jpg" alt="Албания">
+            <source media="(max-width:1023px)" srcset="./img/albania-tablet.jpg">
+            <img class="places__image" width="350" height="430" src="./img/albania.jpg" alt="Албания">
           </picture>
           <span class="places__name">Албания</span>
         </li>
         <li class="places__item places__item--macedonia">
           <picture>
-            <source media="(max-width:1023px)" srcset="img/macedonia-tablet.jpg">
-            <img class="places__image" width="350" height="430" src="img/macedonia.jpg" alt="Македония">
+            <source media="(max-width:1023px)" srcset="./img/macedonia-tablet.jpg">
+            <img class="places__image" width="350" height="430" src="./img/macedonia.jpg" alt="Македония">
           </picture>
           <span class="places__name">Македония</span>
         </li>
         <li class="places__item places__item--montenegro">
           <picture>
-            <source media="(max-width:1023px)" srcset="img/montenegro-tablet.jpg">
-            <img class="places__image" width="350" height="430" src="img/montenegro.jpg" alt="Черногория">
+            <source media="(max-width:1023px)" srcset="./img/montenegro-tablet.jpg">
+            <img class="places__image" width="350" height="430" src="./img/montenegro.jpg" alt="Черногория">
           </picture>
           <span class="places__name">Черногория</span>
         </li>
         <li class="places__item places__item--croatia">
           <picture>
-            <source media="(max-width:1023px)" srcset="img/croatia-tablet.jpg">
-            <img class="places__image" width="350" height="430" src="img/croatia.jpg" alt="Хорватия">
+            <source media="(max-width:1023px)" srcset="./img/croatia-tablet.jpg">
+            <img class="places__image" width="350" height="430" src="./img/croatia.jpg" alt="Хорватия">
           </picture>
           <span class="places__name">Хорватия</span>
         </li>
@@ -259,7 +272,7 @@
             </div>
           </div>
       </div>
-      <div class="countries__travel-price travel-price container">
+      <div class="countries__travel-price travel-price container" id="price">
           <h2 class="visually-hidden">Стоимость путешествия</h2>
           <div class="travel-price__cards">
             <div class="travel-price__package">
