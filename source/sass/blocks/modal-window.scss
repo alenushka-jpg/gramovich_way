@@ -1,12 +1,38 @@
 .modal-window {
+  display: none;
   position: relative;
-  width: 320px;
-  height: 568px;
-  padding: 50px 16px;
+  width: 728px;
+  height: 444px;
   text-align: center;
   background-color: $basic-white;
   box-shadow: 0 4px 30px rgba($basic-shadow, 0.1);
   border-radius: 5px;
+
+  &--show {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    height: 568px;
+    padding: 50px 16px;
+  }
+}
+
+.modal-window__form-popup {
+  display: flex;
+}
+
+.modal-window__content {
+  width: 391px;
+  padding-top: 72px;
+  padding-right: 61px;
+  padding-left: 59px;
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .modal-window__close {
@@ -20,7 +46,7 @@
 
 .modal-window__title {
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 25px;
   line-height: 170%;

@@ -178,14 +178,9 @@
   height: 596px;
 
   @media (max-width: $tablet-width) {
-    width: 768px;
     height: 415px;
+    width: 100%;
     margin: 0 auto;
-  }
-
-  @media (max-width: $mobile-width) {
-    position: static;
-    width: 320px;
   }
 }
 

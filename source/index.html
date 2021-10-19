@@ -37,7 +37,7 @@
         </a>
         <button class="main-navigation__close" type="button">
           <span class="visually-hidden">Закрыть меню</span>
-          <img class="main-navigation__close-icon" src="./img/icon/icon-close.svg" width="22" height="22">
+          <img class="main-navigation__close-icon" src="./img/icon/icon-close.svg" width="22" height="22" alt="">
         </button>
       </nav>
     </header>
@@ -421,7 +421,7 @@
         <div class="questions__form">
           <span class="questions__title">У Вас остались вопросы?</span>
           <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="questions__user-data user-data" action="#">
+          <form class="questions__user-data user-data" action="#" method="POST">
             <div class="user-data__contacts user-data__contacts--tel">
               <p class="user-data__error">Данные не верны</p>
               <label class="visually-hidden" for="phone">Введите номер телефона</label>
@@ -477,8 +477,8 @@
             puteshestviemechta@gmail.ru
           </a>
         </li>
-        <li class="contacts__item contacts__link--tel">
-          <a class="contacts__link" href="tel:749978468446" title="Номер для связи">
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link--tel" href="tel:749978468446" title="Номер для связи">
             <svg class="contacts__svg" width="25" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.3961 6.62432C1.31155 5.42623 1.57729 4.24606 2.2809 3.29684C2.8909 2.43632 3.68511 1.96636 4.64239 1.69172C5.44868 1.4525 5.97715 1.74561 6.20968 2.64204C6.54186 3.98224 7.01598 5.3225 7.18811 6.73361C7.24247 7.35485 6.84084 8.23322 6.40598 8.6856C5.31583 9.75888 5.54232 10.5399 6.36976 12.1643C6.62644 12.6881 7.03412 13.5934 7.82834 14.7919C8.65577 15.9992 9.09364 16.6472 10.1566 16.0975C11.3374 15.5035 12.198 15.8855 13.0889 16.8444C13.6928 17.5369 14.3572 18.1318 14.9612 18.8243C15.8339 19.8542 15.7946 20.5641 15.1121 21.2915C13.8831 22.6309 11.8538 23.0736 10.3439 22.1766C9.51039 21.6881 8.67994 21.0487 8.0186 20.303C5.10447 16.9825 3.00266 13.1212 1.73735 8.76321C1.53502 8.02654 1.4414 7.28104 1.3961 6.62432Z" stroke="#d7d9df" stroke-width="2" stroke-miterlimit="10"/>
             </svg>
@@ -501,29 +501,35 @@
           <source type="image/webp" srcset="./img/popup-ocean.webp 1x, ./img/popup-ocean@2x.webp 2x">
           <img class="modal-window__image" src="./img/popup-ocean.jpg" srcset="./img/popup-ocean@2x.jpg 2x" width="338" height="444" alt="фото океана">
         </picture>
-        <button class="modal-window__close close-popup" type="button">
+        <button class="modal-window__close js-close-popup" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
-          <img class="modal-window__close-icon" src="./img/icon/icon-close.svg" width="22" height="22">
+          <img class="modal-window__close-icon" src="./img/icon/icon-close.svg" width="22" height="22" alt="">
         </button>
-        <h3 class="modal-window__title">Купить тур</h3>
-        <form class="modal-window__form user-data user-data--popup" action="#" method="POST">
-          <label class="user-data__contacts user-data__contacts--popup">
-            <input class="user-data__input user-data__input--tel" type="tel" placeholder="Введите 10 цифр номера">
-            <span class="visually-hidden">Введите ваш номер телефона</span>
-          </label>
-          <label class="user-data__contacts user-data__contacts--popup">
-            <input class="user-data__input user-data__input--tel" type="email" placeholder="E-mail">
-            <span class="visually-hidden">Введите ваш e-mail</span>
-          </label>
-          <button class="user-data__button button js-send-form" type="submit">Отправить</button>
-        </form>
+        <div class="modal-window__content">
+          <h3 class="modal-window__title">Купить тур</h3>
+          <form class="modal-window__form user-data user-data--popup" action="#" method="POST">
+            <div class="user-data__contacts user-data__contacts--tel user-data__contacts--popup">
+              <p class="user-data__error">Данные не верны</p>
+              <label class="visually-hidden" for="phone-popup">Введите номер телефона</label>
+              <input class="user-data__input user-data__input--tel js-focus-input" name="tel" type="tel" id="phone-popup" pattern="^\+7\d{3}\d{7}$"
+                placeholder="Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
+            </div>
+            <div class="user-data__contacts user-data__contacts--popup">
+              <p class="user-data__error">Данные не верны</p>
+              <label class="visually-hidden" for="email-popup">Введите адрес электронной почты</label>
+              <input class="user-data__input user-data__input--tel" type="email" id="email-popup" placeholder="E-mail"
+                aria-label="Поле для ввода адреса электронной почты">
+            </div>
+            <button class="user-data__button button js-send-form" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
     <div class="success-message">
-      <div class="success-message__overlay"></div>
+      <div class="overlay"></div>
       <div class="success-message__popup">
         <button class="success-message__close js-close-popup js-close-success-popup" type="button">
-          <img class="success-message__icon" src="./img/icon/icon-close.svg" width="22" height="22">
+          <img class="success-message__icon" src="./img/icon/icon-close.svg" width="22" height="22" alt="">
         </button>
         <span class="success-message__text">Форма успешно отправлена, <br> спасибо! :) </span>
       </div>
