@@ -20,8 +20,7 @@
 
 .main-navigation__list {
   display: flex;
-  margin: 0;
-  margin-right: 65px;
+  margin: 0 77px 0 0;
   padding: 0;
   list-style: none;
 
@@ -56,14 +55,21 @@
 
   @media (max-width: $tablet-width) {
     padding-left: 16px;
+    padding-right: 16px;
     font-weight: 600;
     font-size: 20px;
     line-height: 140%;
     color: $dark-grey;
+    background-image: url("../img/icon/icon-arrow.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: top 22px right 16px;
   }
 }
 
 .main-navigation__phone {
+  display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 18px;
@@ -76,6 +82,15 @@
 
   @media (max-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-navigation__phone-icon {
+  margin-right: 20px;
+  stroke: $basic-darkest;
+
+  &:hover {
+    stroke: $basic-accent;
   }
 }
 

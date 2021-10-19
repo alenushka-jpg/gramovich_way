@@ -13,6 +13,9 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
 }
 
 .modal-window__title {
@@ -22,4 +25,10 @@
   font-size: 25px;
   line-height: 170%;
   color: $dark-grey;
+}
+
+.modal-window__image {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

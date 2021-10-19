@@ -4,14 +4,43 @@
   justify-content: space-between;
 }
 
-.user-data__contacts {
-  padding-bottom: 25px;
-
-  @media (max-width: $mobile-width) {
-    padding-bottom: 20px;
+.user-data--popup {
+  .user-data__contacts,
+  .user-data__input,
+  .user-data__button {
     width: 100%;
   }
 }
+
+.user-data__contacts {
+  position: relative;
+  margin-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+.user-data__error {
+  position: absolute;
+  left: 0;
+  top: -14px;
+  display: none;
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  color: $basic-accent;
+
+  &--show {
+    display: block;
+  }
+}
+
 
 .user-data__contacts--popup {
   @media (max-width: $tablet-width) {
@@ -38,11 +67,47 @@
   }
 }
 
+.user-data__contacts--tel {
+  position: relative;
+
+  .user-data__input {
+    padding-left: 51px;
+  }
+
+  &::before {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    content: "*";
+    top: 10px;
+    left: 17px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $basic-accent;
+  }
+
+  &::after {
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    content: "+7";
+    top: 16px;
+    left: 26px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $basic-darkest;
+  }
+}
+
 .user-data__button {
   margin: 0 auto;
   padding: 19px 42px;
 
   @media (max-width: $tablet-width) {
+    padding: 19px 86px;
+  }
+
+  @media (max-width: $mobile-width) {
     width: 100%;
   }
 }

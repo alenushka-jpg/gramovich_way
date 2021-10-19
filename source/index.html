@@ -30,6 +30,9 @@
           </li>
         </ul>
         <a class="main-navigation__phone" href="tel:749978468446" title="Номер для связи">
+          <svg class="main-navigation__phone-icon" width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.3961 6.62432C1.31155 5.42623 1.57729 4.24606 2.2809 3.29684C2.8909 2.43632 3.68511 1.96636 4.64239 1.69172C5.44868 1.4525 5.97715 1.74561 6.20968 2.64204C6.54186 3.98224 7.01598 5.3225 7.18811 6.73361C7.24247 7.35485 6.84084 8.23322 6.40598 8.6856C5.31583 9.75888 5.54232 10.5399 6.36976 12.1643C6.62644 12.6881 7.03412 13.5934 7.82834 14.7919C8.65577 15.9992 9.09364 16.6472 10.1566 16.0975C11.3374 15.5035 12.198 15.8855 13.0889 16.8444C13.6928 17.5369 14.3572 18.1318 14.9612 18.8243C15.8339 19.8542 15.7946 20.5641 15.1121 21.2915C13.8831 22.6309 11.8538 23.0736 10.3439 22.1766C9.51039 21.6881 8.67994 21.0487 8.0186 20.303C5.10447 16.9825 3.00266 13.1212 1.73735 8.76321C1.53502 8.02654 1.4414 7.28104 1.3961 6.62432Z" stroke-width="2" stroke-miterlimit="10"/>
+          </svg>
           +7 (499) -784-684-46
         </a>
         <button class="main-navigation__close" type="button">
@@ -117,11 +120,11 @@
           </li>
         </ul>
       </section>
-      <section class="countries" id="countries">
+      <section class="countries container" id="countries">
         <h2 class="visually-hidden">Отзывы</h2>
-        <ul class="countries__list container">
+        <ul class="countries__list">
           <li class="countries__item">
-            <button class="countries__toggle">Греция</button>
+            <button class="countries__toggle countries__toggle--current">Греция</button>
           </li>
           <li class="countries__item">
             <button class="countries__toggle">Албания</button>
@@ -136,7 +139,7 @@
             <button class="countries__toggle">Хорватия</button>
           </li>
         </ul>
-        <div class="countries__information countries__information--current container">
+        <div class="countries__information countries__information--current">
           <div class="countries__description">
             <h3 class="countries__title">Греция</h3>
             <p class="countries__text">
@@ -164,12 +167,17 @@
                 Ощущение такое, как будто стоишь на краю света!
               </p>
               <div class="reviews__user">
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar-vlada.webp 1x, ./img/avatar-vlada@2x.webp 2x">
+                  <img class="reviews__user-avatar" width="38" height="38" src="./img/avatar-vlada.jpg"
+                    srcset="./img/avatar-vlada@2x.jpg" alt="Аватар пользователя">
+                </picture>
                 <span class="reviews__name">Влада Голицина</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="countries__information container">
+        <div class="countries__information">
             <div class="countries__description">
               <h3 class="countries__title">Албания</h3>
               <p class="countries__text">
@@ -194,11 +202,16 @@
                 В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
               </p>
               <div class="reviews__user">
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar-marina.webp 1x, ./img/avatar-marina@2x.webp 2x">
+                  <img class="reviews__user-avatar" width="38" height="38" src="./img/avatar-marina.jpg"
+                    srcset="./img/avatar-marina@2x.jpg" alt="Аватар пользователя">
+                </picture>
                 <span class="reviews__name">Маришка</span>
               </div>
             </div>
         </div>
-        <div class="countries__information container">
+        <div class="countries__information">
             <div class="countries__description">
               <h3 class="countries__title">Македония</h3>
               <p class="countries__text">
@@ -225,11 +238,16 @@
                 особенно после долгого пути в гору.
               </p>
               <div class="reviews__user">
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar-mixail.webp 1x, ./img/avatar-mixail@2x.webp 2x">
+                  <img class="reviews__user-avatar" width="38" height="38" src="./img/avatar-mixail.jpg"
+                    srcset="./img/avatar-mixail@2x.jpg" alt="Аватар пользователя">
+                </picture>
                 <span class="reviews__name">Михаил Кузьмин</span>
               </div>
             </div>
         </div>
-        <div class="countries__information container">
+        <div class="countries__information">
             <div class="countries__description">
               <h3 class="countries__title">Черногория</h3>
               <p class="countries__text">
@@ -253,11 +271,16 @@
                 в жизни не видела, разве что в фильмах :) Всем советую
               </p>
               <div class="reviews__user">
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar-nastya.webp 1x, ./img/avatar-nastya@2x.webp 2x">
+                  <img class="reviews__user-avatar" width="38" height="38" src="./img/avatar-nastya.jpg"
+                    srcset="./img/avatar-nastya@2x.jpg" alt="Аватар пользователя">
+                </picture>
                 <span class="reviews__name">Анастасия Мей</span>
               </div>
             </div>
         </div>
-        <div class="countries__information container">
+        <div class="countries__information">
             <div class="countries__description">
               <h3 class="countries__title">Хорватия</h3>
               <p class="countries__text">
@@ -283,6 +306,11 @@
                 мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
               </p>
               <div class="reviews__user">
+                <picture>
+                  <source type="image/webp" srcset="./img/avatar-vladimir.webp 1x, ./img/avatar-vladimir@2x.webp 2x">
+                  <img class="reviews__user-avatar" width="38" height="38" src="./img/avatar-vladimir.jpg"
+                    srcset="./img/avatar-vladimir@2x.jpg" alt="Аватар пользователя">
+                </picture>
                 <span class="reviews__name">Владимир Мулицин</span>
               </div>
             </div>
@@ -290,7 +318,7 @@
         <div class="countries__travel-price travel-price container" id="price">
             <h2 class="visually-hidden">Стоимость путешествия</h2>
             <div class="travel-price__cards">
-              <div class="travel-price__package">
+              <div class="travel-price__package travel-price__package--complex">
                 <div class="travel-price__content">
                   <div class="travel-price__header">
                     <h3 class="travel-price__subtitle">Комплексный</h3>
@@ -298,10 +326,30 @@
                   </div>
                   <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
                   <ul class="travel-price__list">
-                    <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
-                    <li class="travel-price__item">Перелет, трансфер и проживание в отелях</li>
-                    <li class="travel-price__item">Завтраки, ужины в отелях и ланчи на природе</li>
-                    <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z" />
+                      </svg>
+                      Разработанный маршрут с гидом группы
+                    </li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z" />
+                      </svg>
+                      Перелет, трансфер и проживание в отелях
+                    </li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z" />
+                      </svg>
+                      Завтраки, ужины в отелях и ланчи на природе
+                    </li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z" />
+                      </svg>
+                      Экскурсии по удивительно красивым местам Европы
+                    </li>
                   </ul>
                 </div>
                 <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
@@ -314,11 +362,31 @@
                   </div>
                   <p class="travel-price__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
                   <ul class="travel-price__list">
-                  <li class="travel-price__item">Разработанный маршрут с гидом группы</li>
-                  <li class="travel-price__item">Перелет и трансфер</li>
-                  <li class="travel-price__item">Проживание в хостелах при отелях</li>
-                  <li class="travel-price__item">Только завтраки в отелях</li>
-                  <li class="travel-price__item">Экскурсии по удивительно красивым местам Европы</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z"/>
+                      </svg>
+                      Разработанный маршрут с гидом группы</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z"/>
+                      </svg>
+                      Перелет и трансфер</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z"/>
+                      </svg>
+                      Проживание в хостелах при отелях</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z"/>
+                      </svg>
+                      Только завтраки в отелях</li>
+                    <li class="travel-price__item">
+                      <svg class="travel-price__svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6138 5.21059C18.0498 5.54958 18.1285 6.17784 17.7895 6.61385L10.0145 16.6138C9.84138 16.8365 9.58223 16.9758 9.30094 16.9972C9.01966 17.0186 8.74242 16.9202 8.53757 16.7262L4.3125 12.7262C3.91144 12.3465 3.89412 11.7136 4.27382 11.3126C4.65351 10.9115 5.28644 10.8942 5.6875 11.2739L9.11216 14.5161L16.2105 5.38625C16.5495 4.95024 17.1778 4.87159 17.6138 5.21059Z"/>
+                      </svg>
+                      Экскурсии по удивительно красивым местам Европы</li>
                 </ul>
                 </div>
                 <button class="travel-price__button button js-open-popup" type="button">Купить тур сейчас</button>
@@ -332,7 +400,12 @@
               </p>
               <div class="travel-price__contact-us contact-us">
                 <span class="contact-us__text">Свяжитесь с нами</span>
-                <a class="contact-us__link" href="tel:tel:749978468446" title="Номер для связи">+7 (499) -784-684-46</a>
+                <a class="contact-us__link" href="tel:tel:749978468446" title="Номер для связи">
+                  <svg class="contact-us__phone" width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.3961 6.62432C1.31155 5.42623 1.57729 4.24606 2.2809 3.29684C2.8909 2.43632 3.68511 1.96636 4.64239 1.69172C5.44868 1.4525 5.97715 1.74561 6.20968 2.64204C6.54186 3.98224 7.01598 5.3225 7.18811 6.73361C7.24247 7.35485 6.84084 8.23322 6.40598 8.6856C5.31583 9.75888 5.54232 10.5399 6.36976 12.1643C6.62644 12.6881 7.03412 13.5934 7.82834 14.7919C8.65577 15.9992 9.09364 16.6472 10.1566 16.0975C11.3374 15.5035 12.198 15.8855 13.0889 16.8444C13.6928 17.5369 14.3572 18.1318 14.9612 18.8243C15.8339 19.8542 15.7946 20.5641 15.1121 21.2915C13.8831 22.6309 11.8538 23.0736 10.3439 22.1766C9.51039 21.6881 8.67994 21.0487 8.0186 20.303C5.10447 16.9825 3.00266 13.1212 1.73735 8.76321C1.53502 8.02654 1.4414 7.28104 1.3961 6.62432Z" stroke-width="2" stroke-miterlimit="10"/>
+                  </svg>
+                  +7 (499) -784-684-46
+                </a>
               </div>
             </div>
         </div>
@@ -349,14 +422,18 @@
           <span class="questions__title">У Вас остались вопросы?</span>
           <p class="questions__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <form class="questions__user-data user-data" action="#">
-            <label class="user-data__contacts">
-              <input class="user-data__input user-data__input--tel" type="tel" placeholder="Введите 10 цифр номера">
-              <span class="visually-hidden">Введите ваш номер телефона</span>
-            </label>
-            <label class="user-data__contacts">
-              <input class="user-data__input user-data__input--tel" type="email" placeholder="E-mail">
-              <span class="visually-hidden">Введите ваш e-mail</span>
-            </label>
+            <div class="user-data__contacts user-data__contacts--tel">
+              <p class="user-data__error">Данные не верны</p>
+              <label class="visually-hidden" for="phone">Введите номер телефона</label>
+              <input class="user-data__input" name="tel" type="tel" id="phone" pattern="^\+7\d{3}\d{7}$"
+                placeholder="Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
+            </div>
+            <div class="user-data__contacts">
+              <p class="user-data__error">Данные не верны</p>
+              <label class="visually-hidden" for="email">Введите адрес электронной почты</label>
+              <input class="user-data__input" type="email" id="email" placeholder="E-mail"
+                aria-label="Поле для ввода адреса электронной почты">
+            </div>
             <button class="user-data__button button js-send-form" type="submit">Отправить</button>
           </form>
         </div>
@@ -393,12 +470,18 @@
       <h3 class="page-footer__title">Наши контакты</h3>
       <ul class="contacts__list">
         <li class="contacts__item">
-          <a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru" title="Почта для связи">
+          <a class="contacts__link contacts__link--gmail" href="mailto:puteshestviemechta@gmail.ru" title="Почта для связи">
+            <svg class="contacts__svg" width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7636 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z"/>
+            </svg>
             puteshestviemechta@gmail.ru
           </a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__link--tel">
           <a class="contacts__link" href="tel:749978468446" title="Номер для связи">
+            <svg class="contacts__svg" width="25" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.3961 6.62432C1.31155 5.42623 1.57729 4.24606 2.2809 3.29684C2.8909 2.43632 3.68511 1.96636 4.64239 1.69172C5.44868 1.4525 5.97715 1.74561 6.20968 2.64204C6.54186 3.98224 7.01598 5.3225 7.18811 6.73361C7.24247 7.35485 6.84084 8.23322 6.40598 8.6856C5.31583 9.75888 5.54232 10.5399 6.36976 12.1643C6.62644 12.6881 7.03412 13.5934 7.82834 14.7919C8.65577 15.9992 9.09364 16.6472 10.1566 16.0975C11.3374 15.5035 12.198 15.8855 13.0889 16.8444C13.6928 17.5369 14.3572 18.1318 14.9612 18.8243C15.8339 19.8542 15.7946 20.5641 15.1121 21.2915C13.8831 22.6309 11.8538 23.0736 10.3439 22.1766C9.51039 21.6881 8.67994 21.0487 8.0186 20.303C5.10447 16.9825 3.00266 13.1212 1.73735 8.76321C1.53502 8.02654 1.4414 7.28104 1.3961 6.62432Z" stroke="#d7d9df" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
             +7 (499) -784-684-46
           </a>
         </li>
@@ -414,11 +497,16 @@
     </footer>
     <section class="modal-window" id="form-popup">
       <div class="modal-window__form-popup">
+        <picture>
+          <source type="image/webp" srcset="./img/popup-ocean.webp 1x, ./img/popup-ocean@2x.webp 2x">
+          <img class="modal-window__image" src="./img/popup-ocean.jpg" srcset="./img/popup-ocean@2x.jpg 2x" width="338" height="444" alt="фото океана">
+        </picture>
         <button class="modal-window__close close-popup" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
+          <img class="modal-window__close-icon" src="./img/icon/icon-close.svg" width="22" height="22">
         </button>
         <h3 class="modal-window__title">Купить тур</h3>
-        <form class="modal-window__form user-data" action="#" method="POST">
+        <form class="modal-window__form user-data user-data--popup" action="#" method="POST">
           <label class="user-data__contacts user-data__contacts--popup">
             <input class="user-data__input user-data__input--tel" type="tel" placeholder="Введите 10 цифр номера">
             <span class="visually-hidden">Введите ваш номер телефона</span>
@@ -431,6 +519,15 @@
         </form>
       </div>
     </section>
+    <div class="success-message">
+      <div class="success-message__overlay"></div>
+      <div class="success-message__popup">
+        <button class="success-message__close js-close-popup js-close-success-popup" type="button">
+          <img class="success-message__icon" src="./img/icon/icon-close.svg" width="22" height="22">
+        </button>
+        <span class="success-message__text">Форма успешно отправлена, <br> спасибо! :) </span>
+      </div>
+    </div>
     <script src="./js/script.js" type="module"></script>
   </body>
 </html>

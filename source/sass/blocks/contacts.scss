@@ -1,21 +1,28 @@
 .contacts {
   @media (max-width: $tablet-width) {
-    padding-left: 50px;
+    padding-left: 32px;
+    padding-right: 23px;
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 12px;
     padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid $divider;
   }
 }
 
 .contacts__list {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   list-style: none;
 
+  @media (max-width: $tablet-width) {
+    padding-top: 6px;
+  }
+
   @media (max-width: $mobile-width) {
-    text-align: center;
+    padding-bottom: 6px;
   }
 }
 
@@ -28,8 +35,30 @@
 }
 
 .contacts__link {
+  display: flex;
+  align-items: center;
   font-weight: 400;
+  color: $basic-accent;
+
+  &--tel {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.contacts__link--gmail {
   font-size: 14px;
   line-height: 17px;
-  color: $basic-accent;
+
+  .contacts__svg {
+    fill: $divider;
+  }
+}
+
+.contacts__svg {
+  margin-right: 15px;
 }

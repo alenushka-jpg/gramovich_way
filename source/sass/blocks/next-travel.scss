@@ -1,3 +1,12 @@
+.next-travel {
+  border-right: 1px solid $divider;
+
+  @media (max-width: $mobile-width) {
+    border-right: none;
+    border-bottom: 1px solid $divider;
+  }
+}
+
 .next-travel__countries {
   display: grid;
   grid-template-columns: max-content max-content max-content;
@@ -6,6 +15,7 @@
   @media (max-width: $mobile-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
+    padding-bottom: 20px;
   }
 }
 
@@ -15,7 +25,7 @@
   list-style: none;
 
   &--third {
-    margin-right: 37px;
+    margin-right: 47px;
   }
 
   @media (max-width: $mobile-width) {
@@ -28,6 +38,7 @@
     }
 
     &--third {
+      margin-top: 10px;
       margin-right: 0;
       grid-column: 1/-1;
     }

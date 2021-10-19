@@ -60,7 +60,7 @@
 
 .promo__content {
   width: 412px;
-  padding-top: 195px;
+  padding-top: 185px;
   margin-left: 115px;
 
   @media (max-width: $tablet-width) {
@@ -83,12 +83,14 @@
   font-size: 55px;
   line-height: 80px;
   color: $basic-white;
+  letter-spacing: -1.10667px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 15px;
     font-weight: 600;
     font-size: 30px;
     line-height: 150%;
+    letter-spacing: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -98,7 +100,8 @@
 
 .promo__text {
   margin: 0;
-  padding-bottom: 39px;
+  padding-right: 32px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
@@ -106,14 +109,15 @@
   color: $basic-white;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 15px;
-    font-weight: normal;
+    padding-right: 0;
+    margin-bottom: 9px;
     font-size: 16px;
     line-height: 170%;
     text-align: center;
   }
 
   @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
     color: $basic-dark;
   }
 }
@@ -124,15 +128,21 @@
   color: $basic-white;
   text-transform: uppercase;
   text-decoration: none;
+  background-image: url("../img/icon/icon-full-arrow.svg");
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: top 31px right 40px;
 
   @media (max-width: $tablet-width) {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    padding: 18px 40px;
+    padding: 19px 40px;
+    background-position: top 18px right 46px;
   }
 
   @media (max-width: $mobile-width) {
     width: 288px;
+    background-position: top 18px right 40px;
   }
 }

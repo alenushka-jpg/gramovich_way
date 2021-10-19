@@ -31,8 +31,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-bottom: 21px;
   }
 }
 
@@ -43,30 +42,52 @@
   width: 370px;
   min-height: 672px;
   padding-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: $basic-white;
   border: 1px solid rgba($basic-dark, 0.3);
   border-radius: 6px;
 
-
   @media (max-width: $tablet-width) {
     padding: 0;
     padding-top: 30px;
-    min-width: 288px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 288px;
+    min-height: 631px;
   }
 
   @media (max-width: $mobile-width) {
     min-height: 629px;
     margin: 0 auto;
-    margin-bottom: 30px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.travel-price__package:hover {
+  box-shadow: inset 0 0 0 3px $basic-accent;
+
+  .travel-price__subtitle,
+  .travel-price__price {
+    color: $basic-accent;
+  }
+
+  .travel-price__text {
+    border-bottom: 1px solid rgba($basic-accent, 0.5);
+  }
+
+  .travel-price__svg {
+    fill: $basic-darkest;
   }
 }
 
 .travel-price__header {
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
@@ -81,8 +102,10 @@
   font-size: 28px;
   line-height: 38px;
   color: rgba($basic-darkest, 0.7);
+  letter-spacing: -1.27273px;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 7px;
     font-size: 24px;
   }
 }
@@ -96,70 +119,79 @@
 
 .travel-price__text {
   margin: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 24px;
+  padding-bottom: 26px;
+  padding-right: 20px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: $basic-dark;
+  border-bottom: 1px solid rgba($basic-dark, 0.3);
 
   @media (max-width: $tablet-width) {
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 0;
     padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
 .travel-price__list {
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
   list-style: none;
-
-  @media (max-width: $tablet-width) {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 29px;
-  }
 }
 
 .travel-price__item {
-  padding-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
   color: $basic-dark;
 
-  &:last-child {
-    padding-bottom: 30px;
-  }
-
   @media (max-width: $tablet-width) {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
+}
+
+.travel-price__package--complex {
+  .travel-price__item {
+    margin-bottom: 11px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.travel-price__svg {
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  fill: $basic-accent;
 }
 
 .travel-price__button {
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 0;
+    width: 288px;
+    margin: 0 -20px;
+    padding-top: 21px;
+    padding-bottom: 16px;
   }
 }
 
 .travel-price__description {
   width: 306px;
-  padding-top: 116px;
+  padding-top: 57px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding-top: 116px;
+    padding-top: 113px;
     text-align: center;
   }
 
@@ -169,6 +201,7 @@
 }
 
 .travel-price__title {
+  position: relative;
   margin: 0;
   margin-left: auto;
   padding-bottom: 20px;
@@ -177,10 +210,24 @@
   line-height: 90px;
   color: $basic-dark;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $basic-accent;
+  }
+
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     font-size: 30px;
     line-height: 45px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -193,7 +240,7 @@
   margin: 0;
   margin-left: auto;
   padding-top: 30px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
@@ -203,9 +250,11 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 0;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto 17px;
   }
 }
 
