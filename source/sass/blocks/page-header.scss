@@ -11,18 +11,29 @@
   }
 }
 
+.no-js {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .page-header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: $tablet-width) {
+    height: 50px;
     padding-left: 21px;
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 16px;
   }
+}
+
+.no-js .page-header__burger {
+  display: none;
 }
 
 .page-header__burger {

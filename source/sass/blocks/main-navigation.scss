@@ -18,6 +18,20 @@
   }
 }
 
+.no-js .main-navigation {
+  position: static;
+  display: block;
+  height: auto;
+
+  .main-navigation__list {
+    padding-top: 0;
+  }
+
+  .main-navigation__close {
+    display: none;
+  }
+}
+
 .main-navigation__list {
   display: flex;
   margin: 0 77px 0 0;
