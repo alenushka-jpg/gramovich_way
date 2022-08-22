@@ -1,11 +1,9 @@
 .corporate-travel {
-  padding-right: 10px;
   padding-left: 55px;
   border-left: 1px solid $divider;
 
   @media (max-width: $tablet-width) {
     padding-left: 0;
-    padding-top: 30px;
     text-align: center;
     border-left: none;
     border-top: 1px solid $divider;
@@ -19,7 +17,7 @@
 }
 
 .corporate-travel__text {
-  width: 320px;
+  max-width: 320px;
   margin: 0;
   font-weight: 400;
   font-size: 14px;

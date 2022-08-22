@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "imagemin-webp": "^6.0.0",
+    "node": "^14.15.0",
     "normalize.css": "^8.0.1"
   }
 }

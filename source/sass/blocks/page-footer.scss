@@ -1,11 +1,12 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   padding-top: 20px;
   padding-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding-top: 0;
     row-gap: 17px;
     padding-bottom: 54px;
