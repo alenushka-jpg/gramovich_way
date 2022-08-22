@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 13px;
+    padding-top: 0;
     padding-right: 0;
     border-top: none;
   }
@@ -20,6 +20,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 30px;
     margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
   }
 }
 

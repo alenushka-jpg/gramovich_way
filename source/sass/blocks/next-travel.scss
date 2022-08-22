@@ -6,6 +6,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    width: 100%;
     border-right: none;
     border-bottom: 1px solid $divider;
   }
@@ -18,9 +19,10 @@
   column-gap: 50px;
 
   @media (max-width: $mobile-width) {
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     column-gap: 10px;
     padding-bottom: 20px;
+    padding-right: 0;
   }
 }
 
@@ -34,6 +36,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    min-width: 122px;
+
     &--first {
       grid-column: 1/2;
     }
