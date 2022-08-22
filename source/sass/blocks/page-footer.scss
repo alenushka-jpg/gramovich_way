@@ -6,7 +6,7 @@
   padding-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 0;
     row-gap: 17px;
     padding-bottom: 54px;
@@ -24,6 +24,10 @@
   font-size: 18px;
   line-height: 32px;
   color: $basic-darkest;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 10px;
+  }
 
   @media (max-width: $mobile-width) {
     text-align: center;

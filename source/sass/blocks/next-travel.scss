@@ -1,6 +1,10 @@
 .next-travel {
   border-right: 1px solid $divider;
 
+  @media (max-width: $tablet-width) {
+    width: 50%;
+  }
+
   @media (max-width: $mobile-width) {
     border-right: none;
     border-bottom: 1px solid $divider;

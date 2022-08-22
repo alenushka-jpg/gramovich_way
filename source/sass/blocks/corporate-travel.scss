@@ -16,6 +16,13 @@
   }
 }
 
+.corporate-travel h3 {
+  @media (max-width: $tablet-width) {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
 .corporate-travel__text {
   max-width: 320px;
   margin: 0;
@@ -25,6 +32,6 @@
   color: rgba($basic-darkest, 0.5);
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    max-width: 100%;
   }
 }
