@@ -21,6 +21,8 @@
   @media (max-width: $mobile-width) {
     justify-content: center;
     column-gap: 10px;
+    max-width: 345px;
+    margin: 0 auto;
     padding-bottom: 20px;
     padding-right: 0;
   }
