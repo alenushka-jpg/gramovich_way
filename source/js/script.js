@@ -29,3 +29,26 @@ const onCloseClick = () => {
 
 burger.addEventListener('click', onBurgerClick);
 navigationClose.addEventListener('click', onCloseClick);
+
+//Переключение карточек страны
+const countriesToggle = document.querySelectorAll('.countries__toggle');
+const previousControl = document.querySelector('.countries__toggle--current');
+const countriesInfo = document.querySelectorAll('.countries__information');
+// const navigation = document.querySelector('.main-navigation');
+
+//функция, кот-ая переключает вкладки стран
+function showCountriesToggle(index) {
+  //записываем в переменную 1 элемент из массива countriesToggle
+  const currentControl = countriesToggle[index]
+  //на этот элемент мы вешаем активный класс
+  currentControl.classList.add('countries__toggle--current');
+  //а предыдущий активный класс убираем
+  previousControl.classList.remove('countries__toggle--current');
+}
+
+//функция клика, на кот-ую переключается элемент
+const onToggleClick = (item) => {
+  //на айтем вешаем клик и функцию, кот-ая переключает вкладки стран
+  item.addEventListener('click', showCountriesToggle);
+};
+
