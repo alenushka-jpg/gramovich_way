@@ -508,33 +508,35 @@
         </p>
       </section>
     </footer>
-    <section class="modal-window" id="form-popup">
-      <div class="modal-window__form-popup">
-        <picture>
-          <source type="image/webp" srcset="./img/popup-ocean.webp 1x, ./img/popup-ocean@2x.webp 2x">
-          <img class="modal-window__image" src="./img/popup-ocean.jpg" srcset="./img/popup-ocean@2x.jpg 2x" width="338" height="444" alt="фото океана">
-        </picture>
-        <button class="modal-window__close js-close-popup" type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-          <img class="modal-window__close-icon" src="./img/icon/icon-close.svg" width="22" height="22" alt="">
-        </button>
-        <div class="modal-window__content">
-          <h3 class="modal-window__title">Купить тур</h3>
-          <form class="modal-window__form user-data user-data--popup" action="#" method="POST">
-            <div class="user-data__contacts user-data__contacts--tel user-data__contacts--popup">
-              <p class="user-data__error">Данные не верны</p>
-              <label class="visually-hidden" for="phone-popup">Введите номер телефона</label>
-              <input class="user-data__input user-data__input--tel js-focus-input" name="tel" type="tel" id="phone-popup" pattern="^\+7\d{3}\d{7}$"
-                placeholder="Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
-            </div>
-            <div class="user-data__contacts user-data__contacts--popup">
-              <p class="user-data__error">Данные не верны</p>
-              <label class="visually-hidden" for="email-popup">Введите адрес электронной почты</label>
-              <input class="user-data__input user-data__input--tel" type="email" id="email-popup" placeholder="E-mail"
-                aria-label="Поле для ввода адреса электронной почты">
-            </div>
-            <button class="user-data__button button js-send-form" type="submit">Отправить</button>
-          </form>
+    <section class="modal-window modal-window--show" id="form-popup">
+      <div class="overlay">
+        <div class="modal-window__form-popup">
+          <picture>
+            <source type="image/webp" srcset="./img/popup-ocean.webp 1x, ./img/popup-ocean@2x.webp 2x">
+            <img class="modal-window__image" src="./img/popup-ocean.jpg" srcset="./img/popup-ocean@2x.jpg 2x" width="338" height="444" alt="фото океана">
+          </picture>
+          <div class="modal-window__content">
+            <h3 class="modal-window__title">Купить тур</h3>
+            <form class="modal-window__form user-data user-data--popup" action="#" method="POST">
+              <div class="user-data__contacts user-data__contacts--tel user-data__contacts--popup">
+                <p class="user-data__error">Данные не верны</p>
+                <label class="visually-hidden" for="phone-popup">Введите номер телефона</label>
+                <input class="user-data__input user-data__input--tel js-focus-input" name="tel" type="tel" id="phone-popup" pattern="^\+7\d{3}\d{7}$"
+                  placeholder="Введите 10 цифр номера" aria-label="Поле для ввода номера телефона" required>
+              </div>
+              <div class="user-data__contacts user-data__contacts--popup">
+                <p class="user-data__error">Данные не верны</p>
+                <label class="visually-hidden" for="email-popup">Введите адрес электронной почты</label>
+                <input class="user-data__input user-data__input--tel" type="email" id="email-popup" placeholder="E-mail"
+                  aria-label="Поле для ввода адреса электронной почты">
+              </div>
+              <button class="user-data__button button js-send-form" type="submit">Отправить</button>
+            </form>
+            <button class="modal-window__close js-close-popup" type="button">
+              <span class="visually-hidden">Закрыть модальное окно</span>
+              <img class="modal-window__close-icon" src="./img/icon/icon-close.svg" width="22" height="22" alt="">
+            </button>
+          </div>
         </div>
       </div>
     </section>
