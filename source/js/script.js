@@ -30,6 +30,32 @@ const onCloseClick = () => {
 burger.addEventListener('click', onBurgerClick);
 navigationClose.addEventListener('click', onCloseClick);
 
+//Подключение модального окна
+const modalWindow = document.querySelector('.modal-window');
+const modalOpen = document.querySelectorAll('.js-open-popup');
+const modalClose = document.querySelector('.js-close-popup');
+
+function showModal() {
+  modalWindow.classList.add('modal-window--show');
+}
+
+function hideModal() {
+  modalWindow.classList.remove('modal-window--show');
+}
+
+const onModalClick = () => {
+  showModal();
+}
+
+const onModalCloseClick = () => {
+  hideModal();
+}
+
+modalOpen.forEach((item) => {
+  item.addEventListener('click', onModalClick);
+})
+
+modalClose.addEventListener('click', onModalCloseClick);
 //Переключение карточек страны
 
 const tabsSwitch = document.querySelectorAll('.countries__toggle');
