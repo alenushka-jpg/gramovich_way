@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  column-gap: 90px;
+  column-gap: 61px;
   padding-bottom: 140px;
   padding-left: 0;
   padding-right: 0;
@@ -49,10 +49,7 @@
   border-radius: 6px;
 
   @media (max-width: $tablet-width) {
-    padding: 0;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px 0;
     width: 288px;
     min-height: 631px;
   }
@@ -186,7 +183,7 @@
 }
 
 .travel-price__description {
-  width: 306px;
+  width: 292px;
   padding-top: 57px;
 
   @media (max-width: $tablet-width) {
