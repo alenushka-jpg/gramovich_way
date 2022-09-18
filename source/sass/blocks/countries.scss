@@ -36,6 +36,7 @@
   line-height: 24px;
   color: rgba($basic-dark, 0.3);
   background-color: transparent;
+  cursor: pointer;
 
   &--current {
     color: $basic-accent;
