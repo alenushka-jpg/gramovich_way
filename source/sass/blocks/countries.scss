@@ -9,7 +9,7 @@
 }
 
 .countries__list {
-  width: 902px;
+  width: 925px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 112px;
@@ -25,11 +25,13 @@
 }
 
 .countries__item {
-  padding: 25px 0 15px;
+  padding: 20px 0 10px;
 }
 
 .countries__toggle {
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
   border: 0;
   font-weight: 500;
   font-size: 20px;
