@@ -9,6 +9,9 @@ const modalWindow = document.querySelector('.modal-window');
 const modalOpen = document.querySelectorAll('.js-open-popup');
 const modalClose = document.querySelector('.js-close-popup');
 
+const tabsSwitch = document.querySelectorAll('.countries__toggle');
+const contentSwitch = document.querySelectorAll('.countries__information');
+
 pageHeader.classList.remove('no-js');
 
 // Переключение выпадающего меню
@@ -70,10 +73,8 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
-//Переключение карточек страны
 
-const tabsSwitch = document.querySelectorAll('.countries__toggle');
-const contentSwitch = document.querySelectorAll('.countries__information');
+//Переключение карточек страны
 
 window.onload = function () {
   for (let i = 0; i < tabsSwitch.length; i++) {
