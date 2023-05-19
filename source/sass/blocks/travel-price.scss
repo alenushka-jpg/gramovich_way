@@ -66,18 +66,22 @@
 
 .travel-price__package:hover {
   box-shadow: inset 0 0 0 3px $basic-accent;
+  transition: 0.5s;
 
   .travel-price__subtitle,
   .travel-price__price {
     color: $basic-accent;
+    transition: 0.5s;
   }
 
   .travel-price__text {
     border-bottom: 1px solid rgba($basic-accent, 0.5);
+    transition: 0.5s;
   }
 
   .travel-price__svg {
     fill: $basic-darkest;
+    transition: 0.5s;
   }
 }
 

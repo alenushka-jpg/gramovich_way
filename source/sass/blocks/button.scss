@@ -12,6 +12,7 @@
 
   &:hover {
     background-color: $hover-accent;
+    transition: 0.5s;
   }
 
   @media (max-width: $tablet-width) {

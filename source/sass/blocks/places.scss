@@ -113,6 +113,7 @@
 .places__item:hover .places__mask {
   display: flex;
   transform: scale(1);
+  transition: 0.5s;
 }
 
 .places__link {
